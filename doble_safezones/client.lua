@@ -30,7 +30,7 @@ end)
 -- Bloquear acciones agresivas
 Citizen.CreateThread(function()
     while true do
-        Wait(1)
+        Wait(50)
         if inSafeZone then
             DisableControlAction(0, 24, true)
             DisableControlAction(0, 69, true)
@@ -44,3 +44,4 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
